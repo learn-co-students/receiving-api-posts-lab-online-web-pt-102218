@@ -8,7 +8,7 @@ RSpec.describe "Products", type: :feature do
     Order.destroy_all
   end
 
-  pending describe "creating products" do
+   describe "creating products" do
     it 'shows created product and does not redirect', js: :true do
       visit new_product_path
       fill_in "Name", with: "New Product"
