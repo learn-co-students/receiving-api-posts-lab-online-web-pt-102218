@@ -19,7 +19,7 @@ class ProductsController < ApplicationController
 
   def create
     product = Product.create(product_params)
-    render plain: product.to_json
+    render json: product.to_json
   end
 
   def show
